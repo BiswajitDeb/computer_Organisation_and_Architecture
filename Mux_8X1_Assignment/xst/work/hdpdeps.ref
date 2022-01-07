@@ -1,0 +1,9 @@
+V3 3
+FL "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_VHDL.vhd" 2022/01/08.02:13:13 I.24
+EN work/Mux_8X1_VHDL 1641588390 \
+      FL "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Mux_8X1_VHDL/Behavioral 1641588391 \
+      FL "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_VHDL.vhd" \
+      EN work/Mux_8X1_VHDL 1641588390

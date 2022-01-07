@@ -1,0 +1,2 @@
+xst -ise "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_Assignment" -intstyle ise -ifn Mux_8X1_VHDL.xst -ofn Mux_8X1_VHDL.syr
+xst -ise "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_Assignment" -intstyle ise -ifn Mux_8X1_VHDL.xst -ofn Mux_8X1_VHDL.syr

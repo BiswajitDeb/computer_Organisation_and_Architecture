@@ -1,0 +1,2 @@
+vhdl work "Mux_8X1_VHDL.vhd"
+vhdl work Mux_8X1_TestBench.ant

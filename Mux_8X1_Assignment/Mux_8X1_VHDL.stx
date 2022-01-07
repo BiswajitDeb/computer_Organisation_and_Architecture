@@ -1,0 +1,21 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/COA Assignments and codes/Mux_8X1_Assignment/Mux_8X1_VHDL.vhd" in Library work.
+Architecture behavioral of Entity mux_8x1_vhdl is up to date.
+CPU : 0.04 / 0.11 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 135428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
