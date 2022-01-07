@@ -1,0 +1,3 @@
+MODULE Half_Adder_testbench
+SUBMODULE Half_Adder_VHDL
+INSTANCE UUT

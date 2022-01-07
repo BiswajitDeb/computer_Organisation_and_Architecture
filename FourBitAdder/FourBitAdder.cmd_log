@@ -1,0 +1,2 @@
+xst -ise "D:/COA Assignments and codes/FourBitAdder/FourBitAdder" -intstyle ise -ifn FourBitAdder.xst -ofn FourBitAdder.syr
+xst -ise "D:/COA Assignments and codes/FourBitAdder/FourBitAdder" -intstyle ise -ifn FourBitAdder.xst -ofn FourBitAdder.syr

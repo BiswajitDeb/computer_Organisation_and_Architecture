@@ -1,0 +1,3 @@
+MODULE Full_Adder_TestBench
+SUBMODULE Full_Adder_VHDL
+INSTANCE UUT

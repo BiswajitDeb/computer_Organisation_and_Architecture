@@ -1,0 +1,257 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.06 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.06 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: EightBit_Adder_VHDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "EightBit_Adder_VHDL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "EightBit_Adder_VHDL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : EightBit_Adder_VHDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : EightBit_Adder_VHDL.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" in Library work.
+Entity <eightbit_adder_vhdl> compiled.
+Entity <EightBit_Adder_VHDL> (Architecture <Behavioral>) compiled.
+Entity <full_adder> compiled.
+Entity <full_adder> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <EightBit_Adder_VHDL> (Architecture <Behavioral>).
+Entity <EightBit_Adder_VHDL> analyzed. Unit <EightBit_Adder_VHDL> generated.
+
+Analyzing Entity <full_adder> (Architecture <behavioral>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <full_adder>.
+    Related source file is "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd".
+    Found 1-bit xor3 for signal <sm>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <EightBit_Adder_VHDL>.
+    Related source file is "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd".
+Unit <EightBit_Adder_VHDL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 8
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 8
+ 1-bit xor3                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s500e.nph' in environment D:\Xlinx.
+
+Optimizing unit <EightBit_Adder_VHDL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block EightBit_Adder_VHDL, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : EightBit_Adder_VHDL.ngr
+Top Level Output File Name         : EightBit_Adder_VHDL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 17
+#      LUT2                        : 1
+#      LUT3                        : 15
+#      LUT4                        : 1
+# IO Buffers                       : 26
+#      IBUF                        : 17
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      10  out of   4656     0%  
+ Number of 4 input LUTs:                17  out of   9312     0%  
+ Number of bonded IOBs:                 26  out of    232    11%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 18.313ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 97 / 9
+-------------------------------------------------------------------------
+Delay:               18.313ns (Levels of Logic = 10)
+  Source:            y<0> (PAD)
+  Destination:       co (PAD)
+
+  Data Path: y<0> to co
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   1.082  y_0_IBUF (y_0_IBUF)
+     LUT3:I0->O            1   0.704   0.836  a1/cr_SW0 (N30)
+     LUT3:I2->O            2   0.704   0.912  a1/cr (cary<1>)
+     LUT3:I2->O            2   0.704   0.912  Ker01 (N01)
+     LUT3:I2->O            2   0.704   0.912  a3/cr1 (cary<3>)
+     LUT3:I2->O            2   0.704   0.912  Ker11 (N11)
+     LUT3:I2->O            2   0.704   0.912  a5/cr1 (cary<5>)
+     LUT3:I2->O            2   0.704   0.912  Ker21 (N21)
+     LUT3:I2->O            1   0.704   0.801  EightBit_Adder_VHDL_0_xo<1>1 (sum_7_OBUF)
+     OBUF:I->O                 3.272          sum_7_OBUF (sum<7>)
+    ----------------------------------------
+    Total                     18.313ns (10.122ns logic, 8.191ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+CPU : 1.88 / 1.96 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 176044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

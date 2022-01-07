@@ -1,0 +1,57 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" in Library work.
+ERROR:HDLParsers:3011 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 43. End Identifier Demux does not match declaration, Eight_One_Demux_VHDL.
+ERROR:HDLParsers:3010 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 45. Entity Demux does not exist.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. Undefined symbol 'S2'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. S2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. Undefined symbol 'S1'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. S1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. Undefined symbol 'S0'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. S0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. Undefined symbol 'O'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. O: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 49. Undefined symbol 'd0'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 49. not can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 49. not can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 49. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 50. Undefined symbol 'd1'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 50. not can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 50. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 50. Undefined symbol 's0'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 50. s0: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 51. Undefined symbol 'd2'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 51. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 51. Undefined symbol 's1'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 51. s1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 51. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 52. Undefined symbol 'd3'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 52. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 53. Undefined symbol 'd4'.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 53. Undefined symbol 's2'.
+ERROR:HDLParsers:1209 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 53. s2: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 53. not can not have such operands in this context.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 53. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 54. Undefined symbol 'd5'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 54. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 55. Undefined symbol 'd6'.
+ERROR:HDLParsers:808 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 55. not can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 56. Undefined symbol 'd7'.
+WARNING:HDLParsers:1406 - "D:/Xlinx/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" Line 47. No sensitivity list and no wait in the process
+CPU : 0.02 / 0.08 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 135412 kilobytes
+
+Number of errors   :   36 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

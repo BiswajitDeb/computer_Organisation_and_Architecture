@@ -1,0 +1,4 @@
+set -tmpdir ./xst/projnav.tmp
+elaborate
+-ifn Demux_1X8_VHDL.prj
+-ifmt mixed

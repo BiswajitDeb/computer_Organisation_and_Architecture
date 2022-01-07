@@ -1,0 +1,31 @@
+ command line:
+   D:\COA Assignments and codes\FourBitAdder\FourBit_Adder_TestBench_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Fri Jan 07 01:13:00 2022
+
+Total Line Count = 789
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 70.869 Meg. 
+
+ Total signals 33
+ Total nets 17
+ Total signal drivers 11
+ Total blocks 11
+ Total primitive blocks 4
+ Total processes 10
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage 79.487 Meg. 
+
+Fri Jan 07 01:13:00 2022
+

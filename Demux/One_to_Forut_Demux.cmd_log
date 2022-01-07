@@ -1,0 +1,1 @@
+xst -ise "D:/Xlinx/Demux/Demux" -intstyle ise -ifn One_to_Forut_Demux.xst -ofn One_to_Forut_Demux.syr

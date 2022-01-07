@@ -1,0 +1,2 @@
+xst -ise "D:/Xlinx/Demux/Demux" -intstyle ise -ifn OneTOFour_Demux.xst -ofn OneTOFour_Demux.syr
+xst -ise "D:/COA Assignments and codes/Demux/Demux" -intstyle ise -ifn OneTOFour_Demux.xst -ofn OneTOFour_Demux.syr

@@ -1,0 +1,1 @@
+xst -ise "D:/Xlinx/lab_assignment_1/lab_assignment_1" -intstyle ise -ifn Assignment1.xst -ofn Assignment1.syr

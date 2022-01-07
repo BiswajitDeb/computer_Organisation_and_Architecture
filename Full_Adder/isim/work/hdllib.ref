@@ -1,0 +1,4 @@
+AR full_adder_testbench testbench_arch "D:/COA Assignments and codes/Full_Adder/Full_Adder_TestBench.ant" sub00/vhpl03 1641472000
+AR full_adder_vhdl behavioral "D:/COA Assignments and codes/Full_Adder/Full_Adder_VHDL.vhd" sub00/vhpl01 1641471916
+EN full_adder_vhdl NULL "D:/COA Assignments and codes/Full_Adder/Full_Adder_VHDL.vhd" sub00/vhpl00 1641471915
+EN full_adder_testbench NULL "D:/COA Assignments and codes/Full_Adder/Full_Adder_TestBench.ant" sub00/vhpl02 1641471999

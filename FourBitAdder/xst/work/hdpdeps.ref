@@ -1,0 +1,14 @@
+V3 6
+FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" 2022/01/07.01:01:45 I.24
+EN work/FourBit_Adder_VHDL 1641498182 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/FourBit_Adder_VHDL/Behavioral 1641498183 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      EN work/FourBit_Adder_VHDL 1641498182 CP fa
+EN work/fa 1641498184              FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373
+AR work/fa/fa_arch 1641498185 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      EN work/fa 1641498184

@@ -1,0 +1,2 @@
+xst -ise "D:/COA Assignments and codes/Half_adder/Half_adder" -intstyle ise -ifn Half_Adder_VHDL.xst -ofn Half_Adder_VHDL.syr
+xst -ise "D:/COA Assignments and codes/Half_adder/Half_adder" -intstyle ise -ifn Half_Adder_VHDL.xst -ofn Half_Adder_VHDL.syr

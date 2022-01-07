@@ -1,0 +1,4 @@
+EN demux_1x8_vhdl NULL "D:/COA Assignments and codes/Demux_8X1_withTable/Demux_1X8_VHDL.vhd" sub00/vhpl00 1641538185
+AR demux_1x8_testbench testbench_arch "D:/COA Assignments and codes/Demux_8X1_withTable/Demux_1X8_TestBench.ant" sub00/vhpl03 1641538188
+AR demux_1x8_vhdl behavioral "D:/COA Assignments and codes/Demux_8X1_withTable/Demux_1X8_VHDL.vhd" sub00/vhpl01 1641538186
+EN demux_1x8_testbench NULL "D:/COA Assignments and codes/Demux_8X1_withTable/Demux_1X8_TestBench.ant" sub00/vhpl02 1641538187

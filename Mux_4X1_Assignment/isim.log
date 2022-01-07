@@ -1,0 +1,31 @@
+ command line:
+   D:\COA Assignments and codes\Mux_4X1_Assignment\Mux_4X1_TestBench_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Fri Jan 07 12:02:57 2022
+
+Total Line Count = 730
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 70.2095 Meg. 
+
+ Total signals 14
+ Total nets 7
+ Total signal drivers 4
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 3
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.015625 sec.
+
+ Estimate current memory usage 78.8275 Meg. 
+
+Fri Jan 07 12:02:57 2022
+

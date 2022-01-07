@@ -1,0 +1,15 @@
+V3 6
+FL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" 2022/01/07.01:21:36 I.24
+EN work/EightBit_Adder_VHDL 1641538637 \
+      FL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/EightBit_Adder_VHDL/Behavioral 1641538638 \
+      FL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" \
+      EN work/EightBit_Adder_VHDL 1641538637 CP full_adder
+EN work/full_adder 1641538639 \
+      FL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373
+AR work/full_adder/Behavioral 1641538640 \
+      FL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" \
+      EN work/full_adder 1641538639

@@ -1,0 +1,2 @@
+vhdl work "OneTOFour_Demux.vhd"
+vhdl work Demux_Test_Bench_wave.ant

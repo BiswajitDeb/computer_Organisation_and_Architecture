@@ -1,0 +1,6 @@
+EN eightbit_adder_vhdl NULL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" sub00/vhpl00 1641498823
+EN eightbitadder_testbench NULL "D:/COA Assignments and codes/EightBit_Adder/EightBitAdder_TestBench.ant" sub00/vhpl04 1641498843
+AR eightbit_adder_vhdl behavioral "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" sub00/vhpl01 1641498824
+AR full_adder behavioral "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" sub00/vhpl03 1641498826
+EN full_adder NULL "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder_VHDL.vhd" sub00/vhpl02 1641498825
+AR eightbitadder_testbench testbench_arch "D:/COA Assignments and codes/EightBit_Adder/EightBitAdder_TestBench.ant" sub00/vhpl05 1641498844

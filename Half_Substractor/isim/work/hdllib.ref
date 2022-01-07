@@ -1,0 +1,4 @@
+AR half_substractor_waveform testbench_arch "D:/COA Assignments and codes/Half_Substractor/Half_Substractor_WaveForm.ant" sub00/vhpl03 1641389819
+EN half_substractor_waveform NULL "D:/COA Assignments and codes/Half_Substractor/Half_Substractor_WaveForm.ant" sub00/vhpl02 1641389818
+EN half_substractor_vhdl NULL "D:/COA Assignments and codes/Half_Substractor/Half_substractor_VHDL.vhd" sub00/vhpl00 1641389766
+AR half_substractor_vhdl behavioral "D:/COA Assignments and codes/Half_Substractor/Half_substractor_VHDL.vhd" sub00/vhpl01 1641389767

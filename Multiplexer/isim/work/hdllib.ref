@@ -1,0 +1,14 @@
+AR mux_four_one_vhdl behavioral "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" sub00/vhpl01 1641499826
+AR mux_2x1_testbench testbench_arch "D:/COA Assignments and codes/Multiplexer/Mux_2X1_TestBench.ant" sub00/vhpl07 1641500049
+EN mux_four_one_vhdl NULL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" sub00/vhpl00 1641499825
+AR mux_2x1_vhdl behavioral "D:/COA Assignments and codes/Multiplexer/Mux_2X1_VHDL.vhd" sub00/vhpl05 1641500047
+AR mux_8x1_vhdl behavioral "D:/COA Assignments and codes/Multiplexer/Mux_8X1_VHDL.vhd" sub00/vhpl09 1641500383
+EN mux_4x1_vhdl NULL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" sub00/vhpl12 1641536717
+EN mux_2x1_testbench NULL "D:/COA Assignments and codes/Multiplexer/Mux_2X1_TestBench.ant" sub00/vhpl06 1641500048
+AR mux_4x1_testbench testbench_arch "D:/COA Assignments and codes/Multiplexer/Mux_4X1_TestBench.ant" sub00/vhpl03 1641499872
+EN mux_8x1_vhdl NULL "D:/COA Assignments and codes/Multiplexer/Mux_8X1_VHDL.vhd" sub00/vhpl08 1641500382
+AR mux_4x1_vhdl behavioral "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" sub00/vhpl13 1641536718
+AR mux_8x1_testbench testbench_arch "D:/COA Assignments and codes/Multiplexer/Mux_8X1_testBench.ant" sub00/vhpl11 1641500385
+EN mux_2x1_vhdl NULL "D:/COA Assignments and codes/Multiplexer/Mux_2X1_VHDL.vhd" sub00/vhpl04 1641500046
+EN mux_8x1_testbench NULL "D:/COA Assignments and codes/Multiplexer/Mux_8X1_testBench.ant" sub00/vhpl10 1641500384
+EN mux_4x1_testbench NULL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_TestBench.ant" sub00/vhpl02 1641499871

@@ -1,0 +1,2 @@
+xst -ise "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder" -intstyle ise -ifn EightBit_Adder_VHDL.xst -ofn EightBit_Adder_VHDL.syr
+xst -ise "D:/COA Assignments and codes/EightBit_Adder/EightBit_Adder" -intstyle ise -ifn EightBit_Adder_VHDL.xst -ofn EightBit_Adder_VHDL.syr

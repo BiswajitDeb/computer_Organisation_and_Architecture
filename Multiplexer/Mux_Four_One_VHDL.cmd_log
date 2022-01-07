@@ -1,0 +1,2 @@
+xst -ise "D:/COA Assignments and codes/Multiplexer/Multiplexer" -intstyle ise -ifn Mux_Four_One_VHDL.xst -ofn Mux_Four_One_VHDL.syr
+xst -ise "D:/COA Assignments and codes/Multiplexer/Multiplexer" -intstyle ise -ifn Mux_Four_One_VHDL.xst -ofn Mux_Four_One_VHDL.syr

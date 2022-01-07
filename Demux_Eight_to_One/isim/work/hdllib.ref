@@ -1,0 +1,4 @@
+EN eight_one_demux_vhdl NULL "D:/COA Assignments and codes/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" sub00/vhpl00 1641535835
+AR one_to_eight_demux_wave testbench_arch "D:/COA Assignments and codes/Demux_Eight_to_One/one_To_Eight_Demux_wave.ant" sub00/vhpl03 1641535838
+EN one_to_eight_demux_wave NULL "D:/COA Assignments and codes/Demux_Eight_to_One/one_To_Eight_Demux_wave.ant" sub00/vhpl02 1641535837
+AR eight_one_demux_vhdl behavioral "D:/COA Assignments and codes/Demux_Eight_to_One/Eight_One_Demux_VHDL.vhd" sub00/vhpl01 1641535836

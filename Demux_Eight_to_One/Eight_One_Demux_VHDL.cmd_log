@@ -1,0 +1,2 @@
+xst -ise "D:/Xlinx/Demux_Eight_to_One/Demux_Eight_to_One" -intstyle ise -ifn Eight_One_Demux_VHDL.xst -ofn Eight_One_Demux_VHDL.syr
+xst -ise "D:/Xlinx/Demux_Eight_to_One/Demux_Eight_to_One" -intstyle ise -ifn Eight_One_Demux_VHDL.xst -ofn Eight_One_Demux_VHDL.syr

@@ -1,0 +1,31 @@
+ command line:
+   D:\COA Assignments and codes\EightBit_Adder\EightBitAdder_TestBench_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Fri Jan 07 01:24:04 2022
+
+Total Line Count = 835
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 70.2218 Meg. 
+
+ Total signals 51
+ Total nets 33
+ Total signal drivers 19
+ Total blocks 15
+ Total primitive blocks 8
+ Total processes 18
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.015625 sec.
+
+ Estimate current memory usage 78.8398 Meg. 
+
+Fri Jan 07 01:24:04 2022
+

@@ -1,0 +1,31 @@
+ command line:
+   D:\Xlinx\lab_assignment_1\Assignment_1_TestBench_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Mon Dec 06 12:24:36 2021
+
+Total Line Count = 840
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 70.7953 Meg. 
+
+ Total signals 18
+ Total nets 9
+ Total signal drivers 8
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 9
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.015625 sec.
+
+ Estimate current memory usage 79.4132 Meg. 
+
+Mon Dec 06 12:24:36 2021
+

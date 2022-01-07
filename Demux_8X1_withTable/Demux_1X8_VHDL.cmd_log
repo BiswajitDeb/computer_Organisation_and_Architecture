@@ -1,0 +1,1 @@
+xst -ise "D:/COA Assignments and codes/Demux_8X1_withTable/Demux_8X1_withTable" -intstyle ise -ifn Demux_1X8_VHDL.xst -ofn Demux_1X8_VHDL.syr

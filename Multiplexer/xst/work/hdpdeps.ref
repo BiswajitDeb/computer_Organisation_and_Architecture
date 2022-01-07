@@ -1,0 +1,23 @@
+V3 11
+FL "D:/COA Assignments and codes/Multiplexer/Mux_8X1_VHDL.vhd" 2022/01/07.01:47:42 I.24
+EN work/Mux_8X1_VHDL 1641535942    FL "D:/COA Assignments and codes/Multiplexer/Mux_8X1_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Mux_8X1_VHDL/Behavioral 1641535943 \
+      FL "D:/COA Assignments and codes/Multiplexer/Mux_8X1_VHDL.vhd" \
+      EN work/Mux_8X1_VHDL 1641535942 CP Mux4x1 CP Mux2x1
+FL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" 2022/01/07.01:38:40 I.24
+EN work/Mux_Four_One_VHDL 1641535950 \
+      FL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Mux_Four_One_VHDL/Behavioral 1641535951 \
+      FL "D:/COA Assignments and codes/Multiplexer/Mux_4X1_VHDL.vhd" \
+      EN work/Mux_Four_One_VHDL 1641535950 CP Mux2x1
+FL "D:/COA Assignments and codes/Multiplexer/Mux_2X1_VHDL.vhd" 2022/01/07.01:42:49 I.24
+EN work/Mux_2X1_VHDL 1641535947    FL "D:/COA Assignments and codes/Multiplexer/Mux_2X1_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Mux_2X1_VHDL/Behavioral 1641535948 \
+      FL "D:/COA Assignments and codes/Multiplexer/Mux_2X1_VHDL.vhd" \
+      EN work/Mux_2X1_VHDL 1641535947

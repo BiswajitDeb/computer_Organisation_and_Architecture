@@ -1,0 +1,31 @@
+ command line:
+   D:\COA Assignments and codes\Demux\Demux_Test_Bench_wave_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Fri Jan 07 11:39:15 2022
+
+Total Line Count = 795
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 70.0867 Meg. 
+
+ Total signals 14
+ Total nets 7
+ Total signal drivers 6
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 3
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0 sec.
+
+ Estimate current memory usage 78.7046 Meg. 
+
+Fri Jan 07 11:39:15 2022
+

@@ -1,0 +1,1 @@
+xst -ise "D:/Xlinx/Half_Substractor/Half_Substractor" -intstyle ise -ifn Half_substractor_VHDL.xst -ofn Half_substractor_VHDL.syr

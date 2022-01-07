@@ -1,0 +1,2 @@
+vhdl work "EightBit_Adder_VHDL.vhd"
+vhdl work EightBitAdder_TestBench.ant

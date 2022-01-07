@@ -1,0 +1,236 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: Assignment1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Assignment1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Assignment1"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Assignment1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : Assignment1.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Xlinx/lab_assignment_1/Assignment1.vhd" in Library work.
+Architecture behavioral of Entity assignment1 is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Assignment1> (Architecture <behavioral>).
+Entity <Assignment1> analyzed. Unit <Assignment1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Assignment1>.
+    Related source file is "D:/Xlinx/lab_assignment_1/Assignment1.vhd".
+    Found 1-bit xor2 for signal <Result_XOR>.
+Unit <Assignment1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s500e.nph' in environment D:\Xlinx.
+
+Optimizing unit <Assignment1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Assignment1, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Assignment1.ngr
+Top Level Output File Name         : Assignment1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 7
+#      INV                         : 1
+#      LUT2                        : 6
+# IO Buffers                       : 9
+#      IBUF                        : 2
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       3  out of   4656     0%  
+ Number of 4 input LUTs:                 6  out of   9312     0%  
+ Number of bonded IOBs:                  9  out of    232     3%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.236ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 13 / 7
+-------------------------------------------------------------------------
+Delay:               7.236ns (Levels of Logic = 3)
+  Source:            B (PAD)
+  Destination:       Result_XOR (PAD)
+
+  Data Path: B to Result_XOR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.218   1.241  B_IBUF (B_IBUF)
+     LUT2:I0->O            1   0.704   0.801  Mxor_Result_XOR_Result1 (Result_XOR_OBUF)
+     OBUF:I->O                 3.272          Result_XOR_OBUF (Result_XOR)
+    ----------------------------------------
+    Total                      7.236ns (5.194ns logic, 2.042ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+CPU : 2.55 / 2.71 s | Elapsed : 3.00 / 3.00 s
+ 
+--> 
+
+Total memory usage is 173660 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

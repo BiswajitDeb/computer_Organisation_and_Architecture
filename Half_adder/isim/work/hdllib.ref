@@ -1,0 +1,4 @@
+EN half_adder_testbench NULL "D:/COA Assignments and codes/Half_adder/Half_Adder_testbench.ant" sub00/vhpl02 1641378232
+AR half_adder_testbench testbench_arch "D:/COA Assignments and codes/Half_adder/Half_Adder_testbench.ant" sub00/vhpl03 1641378233
+AR half_adder_vhdl behavioral "D:/COA Assignments and codes/Half_adder/Half_Adder_VHDL.vhd" sub00/vhpl01 1641378231
+EN half_adder_vhdl NULL "D:/COA Assignments and codes/Half_adder/Half_Adder_VHDL.vhd" sub00/vhpl00 1641378230

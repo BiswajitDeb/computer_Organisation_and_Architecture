@@ -1,0 +1,9 @@
+V3 3
+FL "D:/COA Assignments and codes/Full_substractor/Full_Substractor_VHDL.vhd" 2021/12/05.23:14:15 I.24
+EN work/Full_Substractor_VHDL 1641499007 \
+      FL "D:/COA Assignments and codes/Full_substractor/Full_Substractor_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Full_Substractor_VHDL/Behavioral 1641499008 \
+      FL "D:/COA Assignments and codes/Full_substractor/Full_Substractor_VHDL.vhd" \
+      EN work/Full_Substractor_VHDL 1641499007

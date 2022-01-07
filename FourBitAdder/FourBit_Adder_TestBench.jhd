@@ -1,0 +1,3 @@
+MODULE FourBit_Adder_TestBench
+SUBMODULE FourBit_Adder_VHDL
+INSTANCE UUT

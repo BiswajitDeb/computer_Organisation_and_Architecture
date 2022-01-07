@@ -1,0 +1,4 @@
+set -tmpdir ./xst/projnav.tmp
+elaborate
+-ifn Mux_4X1_VHDL.prj
+-ifmt mixed

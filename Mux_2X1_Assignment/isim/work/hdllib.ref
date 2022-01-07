@@ -1,0 +1,4 @@
+AR mux_2x1_testbench testbench_arch "D:/COA Assignments and codes/Mux_2X1_Assignment/Mux_2X1_TestBench.ant" sub00/vhpl03 1641537388
+AR mux_2x1_vhdl behavioral "D:/COA Assignments and codes/Mux_2X1_Assignment/Mux_2X1_VHDL.vhd" sub00/vhpl01 1641537386
+EN mux_2x1_testbench NULL "D:/COA Assignments and codes/Mux_2X1_Assignment/Mux_2X1_TestBench.ant" sub00/vhpl02 1641537387
+EN mux_2x1_vhdl NULL "D:/COA Assignments and codes/Mux_2X1_Assignment/Mux_2X1_VHDL.vhd" sub00/vhpl00 1641537385

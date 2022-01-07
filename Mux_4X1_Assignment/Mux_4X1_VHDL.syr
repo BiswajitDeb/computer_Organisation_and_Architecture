@@ -1,0 +1,231 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: Mux_4X1_VHDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mux_4X1_VHDL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mux_4X1_VHDL"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Mux_4X1_VHDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : Mux_4X1_VHDL.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_VHDL.vhd" in Library work.
+Entity <Mux_4X1_VHDL> compiled.
+Entity <Mux_4X1_VHDL> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Mux_4X1_VHDL> (Architecture <Behavioral>).
+Entity <Mux_4X1_VHDL> analyzed. Unit <Mux_4X1_VHDL> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Mux_4X1_VHDL>.
+    Related source file is "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_VHDL.vhd".
+Unit <Mux_4X1_VHDL> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s500e.nph' in environment D:\Xlinx.
+
+Optimizing unit <Mux_4X1_VHDL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mux_4X1_VHDL, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Mux_4X1_VHDL.ngr
+Top Level Output File Name         : Mux_4X1_VHDL
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 3
+#      LUT3                        : 2
+#      MUXF5                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 6
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       1  out of   4656     0%  
+ Number of 4 input LUTs:                 2  out of   9312     0%  
+ Number of bonded IOBs:                  7  out of    232     3%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.268ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7 / 1
+-------------------------------------------------------------------------
+Delay:               7.268ns (Levels of Logic = 4)
+  Source:            S1 (PAD)
+  Destination:       Z (PAD)
+
+  Data Path: S1 to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   1.052  S1_IBUF (S1_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Z1_G (N2)
+     MUXF5:I1->O           1   0.221   0.801  Z1 (Z_OBUF)
+     OBUF:I->O                 3.272          Z_OBUF (Z)
+    ----------------------------------------
+    Total                      7.268ns (5.415ns logic, 1.853ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+CPU : 1.82 / 1.91 s | Elapsed : 2.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 174316 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

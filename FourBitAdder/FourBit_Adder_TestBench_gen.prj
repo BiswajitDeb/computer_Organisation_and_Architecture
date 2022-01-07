@@ -1,0 +1,2 @@
+vhdl work "FourBit_Adder_VHDL.vhd"
+vhdl work FourBit_Adder_TestBench.ant

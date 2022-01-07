@@ -1,0 +1,24 @@
+V3 10
+FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_TestBench.ant" 2022/01/07.01:12:56 I.24
+EN work/FourBit_Adder_TestBench 1641498181 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_TestBench.ant" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537 PB ieee/STD_LOGIC_TEXTIO 1132105539 \
+      PB std/textio 1132105521
+AR work/FourBit_Adder_TestBench/testbench_arch 1641498182 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_TestBench.ant" \
+      EN work/FourBit_Adder_TestBench 1641498181 CP FourBit_Adder_VHDL \
+      PB ieee/STD_LOGIC_TEXTIO 1132105539
+FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" 2022/01/07.01:01:45 I.24
+EN work/FourBit_Adder_VHDL 1641498177 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537
+AR work/FourBit_Adder_VHDL/Behavioral 1641498178 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      EN work/FourBit_Adder_VHDL 1641498177 CP fa
+EN work/fa 1641498179              FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1132105529
+AR work/fa/fa_arch 1641498180 \
+      FL "D:/COA Assignments and codes/FourBitAdder/FourBit_Adder_VHDL.vhd" \
+      EN work/fa 1641498179

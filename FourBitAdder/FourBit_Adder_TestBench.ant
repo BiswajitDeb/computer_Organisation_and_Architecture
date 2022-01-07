@@ -1,0 +1,128 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.1i
+--  \   \         Application : ISE
+--  /   /         Filename : FourBit_Adder_TestBench.ant
+-- /___/   /\     Timestamp : Fri Jan 07 01:14:23 2022
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: FourBit_Adder_TestBench
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY FourBit_Adder_TestBench IS
+END FourBit_Adder_TestBench;
+
+ARCHITECTURE testbench_arch OF FourBit_Adder_TestBench IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\COA Assignments and codes\FourBitAdder\FourBit_Adder_TestBench.ano";
+
+    COMPONENT FourBit_Adder_VHDL
+        PORT (
+            A : In std_logic_vector (3 DownTo 0);
+            B : In std_logic_vector (3 DownTo 0);
+            Cin : In std_logic;
+            S : Out std_logic_vector (3 DownTo 0);
+            Carryout : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL A : std_logic_vector (3 DownTo 0) := "0000";
+    SIGNAL B : std_logic_vector (3 DownTo 0) := "0000";
+    SIGNAL Cin : std_logic := '0';
+    SIGNAL S : std_logic_vector (3 DownTo 0) := "0000";
+    SIGNAL Carryout : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : FourBit_Adder_VHDL
+        PORT MAP (
+            A => A,
+            B => B,
+            Cin => Cin,
+            S => S,
+            Carryout => Carryout
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_S(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", S, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, S);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Carryout(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Carryout, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Carryout);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_S(0);
+            ANNOTATE_Carryout(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_S(TX_TIME);
+                ANNOTATE_Carryout(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                A <= "0110";
+                B <= "1000";
+                -- -------------------------------------
+                -- -------------  Current Time:  1000ns
+                WAIT FOR 900 ns;
+                Cin <= '0';
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

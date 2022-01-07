@@ -1,0 +1,127 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.1i
+--  \   \         Application : ISE
+--  /   /         Filename : Full_Adder_TestBench.ant
+-- /___/   /\     Timestamp : Thu Jan 06 17:57:29 2022
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: Full_Adder_TestBench
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY Full_Adder_TestBench IS
+END Full_Adder_TestBench;
+
+ARCHITECTURE testbench_arch OF Full_Adder_TestBench IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\COA Assignments and codes\Full_Adder\Full_Adder_TestBench.ano";
+
+    COMPONENT Full_Adder_VHDL
+        PORT (
+            X : In std_logic;
+            Y : In std_logic;
+            Z : In std_logic;
+            Sum : Out std_logic;
+            Carry : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL X : std_logic := '0';
+    SIGNAL Y : std_logic := '0';
+    SIGNAL Z : std_logic := '0';
+    SIGNAL Sum : std_logic := '0';
+    SIGNAL Carry : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : Full_Adder_VHDL
+        PORT MAP (
+            X => X,
+            Y => Y,
+            Z => Z,
+            Sum => Sum,
+            Carry => Carry
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_Sum(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Sum, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Sum);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_Carry(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Carry, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Carry);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_Sum(0);
+            ANNOTATE_Carry(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_Sum(TX_TIME);
+                ANNOTATE_Carry(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                X <= '1';
+                Y <= '1';
+                Z <= '1';
+                -- -------------------------------------
+                WAIT FOR 900 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

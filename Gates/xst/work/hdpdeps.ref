@@ -1,0 +1,7 @@
+V3 3
+FL $XILINX/lab_assignment_1/Assignment1.vhd 2021/11/19.13:15:45 I.24
+EN work/Assignment1 1638773678     FL $XILINX/lab_assignment_1/Assignment1.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Assignment1/Behavioral 1638773679 FL $XILINX/lab_assignment_1/Assignment1.vhd \
+      EN work/Assignment1 1638773678

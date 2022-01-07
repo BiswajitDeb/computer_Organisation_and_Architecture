@@ -1,0 +1,3 @@
+MODULE EightBitAdder_TestBench
+SUBMODULE EightBit_Adder_VHDL
+INSTANCE UUT

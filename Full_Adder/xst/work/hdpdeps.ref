@@ -1,0 +1,9 @@
+V3 3
+FL "D:/COA Assignments and codes/Full_Adder/Full_Adder_VHDL.vhd" 2022/01/06.17:53:12 I.24
+EN work/Full_Adder_VHDL 1641472005 \
+      FL "D:/COA Assignments and codes/Full_Adder/Full_Adder_VHDL.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/Full_Adder_VHDL/Behavioral 1641472006 \
+      FL "D:/COA Assignments and codes/Full_Adder/Full_Adder_VHDL.vhd" \
+      EN work/Full_Adder_VHDL 1641472005

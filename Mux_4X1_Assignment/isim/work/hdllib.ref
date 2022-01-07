@@ -1,0 +1,4 @@
+EN mux_4x1_vhdl NULL "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_VHDL.vhd" sub00/vhpl00 1641537119
+AR mux_4x1_testbench testbench_arch "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_TestBench.ant" sub00/vhpl03 1641537177
+AR mux_4x1_vhdl behavioral "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_VHDL.vhd" sub00/vhpl01 1641537120
+EN mux_4x1_testbench NULL "D:/COA Assignments and codes/Mux_4X1_Assignment/Mux_4X1_TestBench.ant" sub00/vhpl02 1641537176

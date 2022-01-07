@@ -1,0 +1,26 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" in Library work.
+ERROR:HDLParsers:800 - "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" Line 49. Type of c is incompatible with type of Cin.
+ERROR:HDLParsers:1411 - "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" Line 51. Parameter S of mode in can not be associated with a formal port of mode out.
+ERROR:HDLParsers:1411 - "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" Line 52. Parameter S of mode in can not be associated with a formal port of mode out.
+ERROR:HDLParsers:1411 - "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" Line 53. Parameter Carryout of mode in can not be associated with a formal port of mode out.
+ERROR:HDLParsers:1411 - "D:/COA Assignments and codes/FourBitAdder/FourBitAdder.vhd" Line 53. Parameter S of mode in can not be associated with a formal port of mode out.
+Architecture fa_arch of Entity fa is up to date.
+CPU : 0.02 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 135620 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

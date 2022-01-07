@@ -1,0 +1,4 @@
+EN demux_test_bench_wave NULL "D:/COA Assignments and codes/Demux/Demux_Test_Bench_wave.ant" sub00/vhpl02 1641535755
+EN onetofour_demux NULL "D:/COA Assignments and codes/Demux/OneTOFour_Demux.vhd" sub00/vhpl00 1641535753
+AR demux_test_bench_wave testbench_arch "D:/COA Assignments and codes/Demux/Demux_Test_Bench_wave.ant" sub00/vhpl03 1641535756
+AR onetofour_demux behavioral "D:/COA Assignments and codes/Demux/OneTOFour_Demux.vhd" sub00/vhpl01 1641535754
