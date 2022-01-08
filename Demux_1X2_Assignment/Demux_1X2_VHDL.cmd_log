@@ -1,0 +1,1 @@
+xst -ise "D:/COA Assignments and codes/Demux_1X2_Assignment/Demux_1X2_Assignment" -intstyle ise -ifn Demux_1X2_VHDL.xst -ofn Demux_1X2_VHDL.syr
